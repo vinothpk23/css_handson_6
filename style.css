@@ -1,0 +1,132 @@
+body {
+    background-color: yellow;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+
+}
+
+.anime1 {
+    background-color: rgba(0, 128, 126, 0.755);
+    animation: anime1 7s infinite;
+}
+
+@keyframes anime1 {
+    100% {
+        transform: skewY(20deg);
+    }
+
+    50% {
+        transform: skewY(-20deg);
+    }
+
+    0% {
+        transform: skewY(20deg);
+    }
+}
+
+.anime2 {
+    background-color: grey;
+    animation: anime2 4s infinite;
+}
+
+@keyframes anime2 {
+    100% {
+        transform: skewY(-20deg);
+    }
+
+    50% {
+        transform: skewY(20deg);
+    }
+
+    0% {
+        transform: skewY(-20deg);
+    }
+}
+
+.anime3 {
+    background-color: rgba(0, 128, 126, 0.755);
+    animation: anime3 4s infinite;
+}
+
+@keyframes anime3 {
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.anime4 {
+    background-color: rgba(0, 128, 126, 0.755);
+    animation: anime4 5s infinite;
+}
+
+@keyframes anime4 {
+    100% {
+        transform: scaleY(0.5);
+    }
+
+    50% {
+        transform: scaleY(1);
+    }
+
+    0% {
+        transform: scaleY(0.5);
+    }
+}
+
+.anime5 {
+    background-color: brown;
+    animation: anime5 5s infinite;
+}
+
+@keyframes anime5 {
+    100% {
+        transform: scaleX(0.3);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
+
+    0% {
+        transform: scaleX(0.3);
+    }
+}
+
+.anime6 {
+    background-color: green;
+    animation: anime6 5s infinite;
+}
+
+@keyframes anime6 {
+    100% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-105deg);
+    }
+
+    0% {
+        transform: rotate(10deg);
+    }
+}

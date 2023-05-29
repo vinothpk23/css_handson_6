@@ -1,0 +1,143 @@
+.container {
+    width: auto;
+    height: 100vh;
+    background-image: url("./sky.jpg");
+    background-size: cover;
+    border-top: 10px solid white;
+    border-left: 10px solid orange;
+    border-right: 10px solid green;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.sub1 {
+    display: flex;
+    justify-content: center;
+}
+
+.h {
+    background-color: orange;
+    font-size: larger;
+    margin: 0px 5px;
+}
+
+.i {
+    background-color: white;
+    font-size: larger;
+    margin: 0px 5px;
+}
+
+.d {
+    background-color: green;
+    font-size: larger;
+    margin: 0px 5px;
+}
+
+.city {
+    width: 500vw;
+    height: 18rem;
+    background-image: url("./city.png");
+    position: absolute;
+    bottom: 250px;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+
+@keyframes city {
+    100% {
+        transform: translateX(-1400px);
+    }
+}
+
+.road {
+    width: 500vw;
+    height: 18rem;
+    background-image: url("./road.jpg");
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    animation: road 3s linear infinite;
+}
+
+@keyframes road {
+    100% {
+        transform: translateX(-1400px);
+    }
+}
+
+.car {
+    width: 31rem;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    animation: car 0.7s infinite;
+}
+
+.car img {
+    width: 100%;
+}
+
+@keyframes car {
+    50% {
+        transform: translateY(-1px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+    0% {
+        transform: translateY(-1px);
+    }
+}
+
+.wheel {
+    left: 9%;
+    bottom: 47%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.wheel img {
+    width: 5.5rem;
+    height: 5.5rem;
+    animation: wheel 0.8s linear infinite;
+}
+
+.rwheel {
+    left: 0;
+    position: absolute;
+}
+
+.fwheel {
+    left: 19rem;
+    position: absolute;
+}
+
+@keyframes wheel {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.flag {
+    position: absolute;
+    bottom: 57%;
+    left: 70%;
+}
+
+.sun {
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    background-repeat: repeat-x;
+    animation: sun 20s linear infinite;
+}
+
+@keyframes sun {
+    100% {
+        transform: translateX(-1400px);
+    }
+}

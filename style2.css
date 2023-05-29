@@ -1,0 +1,87 @@
+body {
+    background-color: yellow;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    background-color: rgba(34, 185, 21, 0.853);
+}
+
+.anime1 {
+    transition: width 2s;
+}
+
+.anime1:hover {
+    width: 250px;
+}
+
+.anime2 {
+    transition: width 2s, height 3s;
+}
+
+.anime2:hover {
+    width: 250px;
+    height: 300px;
+}
+
+.anime3 {
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+
+.anime3:hover {
+    width: 250px;
+}
+
+.anime4 {
+    transition: width 2s;
+    transition-timing-function: ease;
+}
+
+.anime4:hover {
+    width: 250px;
+}
+
+.anime5 {
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
+
+.anime5:hover {
+    width: 250px;
+}
+
+.anime6 {
+    transition: width 2s;
+    transition-timing-function: ease-out;
+}
+
+.anime6:hover {
+    width: 250px;
+}
+
+.anime7 {
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.anime7:hover {
+    width: 250px;
+}
